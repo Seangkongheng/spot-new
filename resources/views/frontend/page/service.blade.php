@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@500&display=swap" rel="stylesheet">
+    {{-- bootrap-link --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    {{-- font avsome --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    {{-- top header --}}
+    <div class="top-header-fexed">
+        <div class="top-header">
+            <div class="content-header">
+
+                <div class="all-logo">
+                    <div class="brand-logo">
+                        <div class="logo-img">
+                            <img src="{{ asset('image/logo-removebg-preview.png') }}">
+                        </div>
+                        {{-- <div class="logo2">
+                      <img style="width: 150px" src="{{ asset('image/aa2888_help_center_logo.jpg') }}" >
+                  </div>  --}}
+                        {{-- display menu whenResposfa-inverse --}}
+                        <div class="register-button-responsive">
+                            <div class="btn-register">
+                                <div class="all-button">
+                                    <div class="register">
+                                        {{-- icon-register --}}
+                                        <div class="content-icon mt-3">
+                                            <div class="image-icon-register">
+                                                <i style="font-size: 30px;color:white"
+                                                    class="fa-solid fa-user-plus"></i>
+                                            </div>
+                                            <div class="image-icon-text text-white">
+                                                ចុះឈ្មោះ
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="payment">
+                                        <div class="content-icon mt-3">
+                                            <div class="image-icon-register">
+                                                <i></i>
+                                                <i style="font-size: 30px;color:white"
+                                                    class="fa-solid fa-file-invoice-dollar"></i>
+                                            </div>
+                                            <div class="image-icon-text text-white">
+                                                ដាក់ប្រាក់
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="charge-money">
+                                        <div class="content-icon mt-3">
+                                            <div class="image-icon-register">
+
+                                                <i style="font-size: 30px;color:white"
+                                                    class="fa-solid fa-hand-holding-dollar"></i>
+                                            </div>
+                                            <div class="image-icon-text text-white">
+                                                ដក់ប្រាក់
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playgame">
+                                        <div class="content-icon mt-3">
+                                            <div class="image-icon-register">
+
+                                                <i style="font-size: 30px;color:white" class="fa-solid fa-play"></i>
+                                            </div>
+                                            <div class="image-icon-text text-white">
+                                                លេងហ្គេម
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="title-effect">
+                    <div class="langauge">
+                        <p><a class="text-decoration-none" href=""><b>Khmer</b></a> | <a
+                                class="text-decoration-none" href=""><b>English</b></a></p>
+                    </div><br>
+                    <div class="running-text">
+                        <marquee>ស្វាគមន៏មកកាន់វេបសាយរបស់យើងខ្ញុំ...</marquee>
+                    </div>
+                </div>
+
+                <div class="btn-register">
+                    <div class="all-button">
+                        <div class="register">
+                            {{-- icon-register --}}
+                            <div class="content-icon mt-3">
+                                <div class="image-icon-register">
+                                    <i style="font-size: 30px;color:white" class="fa-solid fa-user-plus"></i>
+                                </div>
+                                <div class="image-icon-text text-white">
+                                    ចុះឈ្មោះ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment">
+                            <div class="content-icon mt-3">
+                                <div class="image-icon-register">
+                                    <i></i>
+                                    <i style="font-size: 30px;color:white" class="fa-solid fa-file-invoice-dollar"></i>
+                                </div>
+                                <div class="image-icon-text text-white">
+                                    ដាក់ប្រាក់
+                                </div>
+                            </div>
+                        </div>
+                        <div class="charge-money">
+                            <div class="content-icon mt-3">
+                                <div class="image-icon-register">
+
+                                    <i style="font-size: 30px;color:white" class="fa-solid fa-hand-holding-dollar"></i>
+                                </div>
+                                <div class="image-icon-text text-white">
+                                    ដក់ប្រាក់
+                                </div>
+                            </div>
+                        </div>
+                        <div class="playgame">
+                            <div class="content-icon mt-3">
+                                <div class="image-icon-register">
+
+                                    <i style="font-size: 30px;color:white" class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="image-icon-text text-white">
+                                    លេងហ្គេម
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- end top header --}}
+    {{-- navbar --}}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+            <a href="{{ route('index') }}" class="navbar-brand"><i class="fa-solid fa-house"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('index') }}">ពត៏មានថ្មីៗ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('lottery') }}">ឆ្នោត</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('kino') }}">គីណូ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('sportNews') }}">កីឡា</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('cacino') }}">កាសុីណូបន្តផ្ទាល់</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('game') }}">ហ្គេម</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('promotion') }}">ប្រមូលសិន</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('service') }}">សេវាអតិថិជន</a>
+                    </li>
+                    <div class="hide-menu-join-name">
+
+                        <hr class="" style=" color: pink;font-size:2px">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">ចុះឈ្មោះ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">ដាក់ប្រាក់</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "href="">ដក់ប្រាក់</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="">លេងហ្គេម</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {{-- end nav --}}
+    </div>
+    {{-- content-page --}}
+    <div class="content-page">
+        <div class="container">
+
+            <div class="all-content-page-sevice mt-5">
+
+                {{-- sport-new --}}
+                <h1>ផ្នែកសេវាកម្ម</h1>
+                <hr>
+                <div class="service-page">
+
+
+                    <div class="content-service-page">
+                        <div class="decription-service-page">
+                            <p>សូមទាក់ទងមកកាន់ផ្នែកភ្នាក់ងារបំរើសេវាកម្មអតិថិជនគ្រប់ពេលវេលាប្រសិនបើលោកអ្នកមានចំងល់ ឬ
+                                សំនួរអ្វីផ្សេងៗដែលពាក់ព័ន្ធនឹងគេហទំព័រកម្សាន្តយើងខ្ងុំ។
+
+                                បុគ្គលិកផ្នែកសេវាអតិថិជនមានភាពរួសរាយ រាក់ទាក់ រង់ចាំឆ្លើយសំនួររបស់លោកអ្នក
+                                ២៤ម៉ោងពេញមួយសប្ដាហ៍ ជាមួយសេវាកម្មបង្កើតអាខោនងាយស្រួល ឆាប់រហ័ស ដក ដាក់ប្រាក់
+                                ចំណាយពេលតិចបំផុត សុវត្ថិភាពសាច់ប្រាក់១០០% និង
+                                ធានារក្សាព័ត៌មានឯកជនភាពរបស់អតិថិជនប្រកបដោយទំនុកចិត្ត។
+
+                                អរគុណសម្រាប់ការគាំទ្រសេវាកម្មកម្សាន្តលើគេហទំព័រ AA2888 Help Center</p>
+                        </div>
+                        <div class="image-service-page">
+                            <img src="{{ asset('image/service-removebg-preview.png') }}">
+                        </div>
+                    </div>
+
+                    <div class="cotent-contact-center-and-number">
+                        <div class="contact-center">
+                            <p class="text-center">បណ្តាញសង្គមទំនាក់ទំនង:</p>
+                            <div class="button-contact text-center mt-5">
+                                <a class="text-decoration-none text-white"
+                                    style="padding: 20px 70px;background:#FF6B1C; border-radius: 15px;"
+                                    href=""><i style="font-size: 25px;"
+                                        class="fa-brands fa-rocketchat">&nbsp;</i>Chat</a>
+                                <a class="text-decoration-none text-white"
+                                    style="padding: 20px 70px;background:#0088cc; border-radius: 15px;"
+                                    href=""><i style="font-size: 25px"
+                                        class="fa-brands fa-telegram"></i>&nbsp;Telegram</a>
+                                <a class="text-decoration-none text-white"
+                                    style="padding: 20px 70px;background: #00AD17; border-radius: 15px;"
+                                    href=""><i style="font-size: 25px"
+                                        class="fa-brands fa-line"></i>&nbsp;Line</a>
+                            </div>
+                            {{-- display none when full screen --}}
+
+                            <div class="icon-contact-responsive text-center">
+                                <a href="" style="font-size: 40px;"><i
+                                        class="fa-brands fa-rocketchat"></i></a>&nbsp;&nbsp;
+                                <a href="" style="font-size: 40px;"><i
+                                        class="fa-brands fa-telegram"></i></a>&nbsp;&nbsp;
+                                <a href="" style="font-size: 40px;"><i class="fa-brands fa-line"></i></a>
+
+                            </div>
+
+
+                        </div>
+                        <div class="contact-numer">
+                            <div class="content-contact-number">
+                                <p>លេខទូរស័ព្ទទំនាក់ទំនង:</p>
+                                <p><b>Cellcard:</b>&nbsp;&nbsp;0948485896</p>
+                                <p><b>Smart:</b>&nbsp;&nbsp;0948485896</p>
+                                <p><b>Metfone:</b>&nbsp;&nbsp;0948485896</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="all-service-copyright text-center mt-5">©2023 helpcenter.com All rights reserved.</p>
+    {{-- end content-page --}}
+
+    <!-- Footer -->
+    {{-- <footer class="bg-dark text-center text-white mt-5">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>ចុះឈ្មោះតាមរយះអុីម៉ែល</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" placeholder="បញ្ចូលអាស្រ័យដ្ធានអុីម៉ែល....">
+                
+              </div>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-outline-light mb-4">
+                ចុះឈ្មោះ
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="mb-4">
+        <p>
+            ស្វាគមន៏មកកាន់គេហទំព័ររបស់់យើងខ្ញុំ ...
+        </p>
+      </section>
+    </div>
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">kongheng.com</a>
+    </div>
+    <!-- Copyright -->
+</footer> --}}
+    <!-- Footer -->
+
+    {{-- script-link --}}
+    <script src="{{ asset('js/scripts.js') }}"></script>
+</body>
+
+</html>
